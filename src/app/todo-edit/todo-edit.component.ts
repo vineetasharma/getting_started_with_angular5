@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-todo-edit',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-edit.component.css']
 })
 export class TodoEditComponent implements OnInit {
+  @Input() todo: object;
 
   constructor() { }
 

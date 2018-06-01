@@ -8,15 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TodoComponent implements OnInit {
   @Input() todo: object;
   @Input() onDelete: any;
+  @Input() onEdit: any;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  onEdit(todo): void {
-    console.log('edit todo------->>>', todo);
-  }
-
 
 }

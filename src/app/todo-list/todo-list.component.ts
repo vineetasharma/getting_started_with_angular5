@@ -25,6 +25,10 @@ export class TodoListComponent implements OnInit {
   ngOnInit() {
   }
   onDelete(todo) {
-    console.log('onDelete called for------->>>', todo);
+    console.log('onDelete called for------->>>', todo, this.todos);
+    // this.todos = this.todos.filter(task => (task.id !== todo.id));
+  }
+  onEdit(todo) {
+    console.log('oNeDIT cALLED IN mAIN aPP====>>>', todo);
   }
 }
