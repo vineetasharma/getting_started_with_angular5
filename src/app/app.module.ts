@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from './card/card.component';
-import { CardEditComponent } from './card-edit/card-edit.component';
-import { CardListComponent } from './card-list/card-list.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoComponent } from './todo/todo.component';
+import { TodoEditComponent } from './todo-edit/todo-edit.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
-    CardListComponent,
-    CardEditComponent
+    TodoListComponent,
+    TodoComponent,
+    TodoEditComponent
   ],
   imports: [
     BrowserModule,

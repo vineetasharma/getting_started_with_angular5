@@ -1,0 +1,15 @@
+.todo-container{
+  margin: 10px;
+  padding: 10px;
+  background-color: darkgrey;
+  border-radius: 4px;
+}
+div{
+  display: inline-block;
+}
+.btn{
+  margin-left: 10px;
+  padding: 5px;
+  background-color: dimgray;
+  border-radius: 5px;
+}
