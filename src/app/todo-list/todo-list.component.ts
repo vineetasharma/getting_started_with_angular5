@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
-export class TodoListComponent implements OnInit {
+export class TodoListComponent {
 
   todos = [
     { id: 11, name: 'Task1' },
@@ -20,15 +20,11 @@ export class TodoListComponent implements OnInit {
     { id: 20, name: 'Task10' }
   ];
 
-  constructor() { }
+  onDelete = (todo) => {
+     this.todos = this.todos.filter(task => (task.id !== todo.id));
+  }
 
-  ngOnInit() {
-  }
-  onDelete(todo) {
-    console.log('onDelete called for------->>>', todo, this.todos);
-    // this.todos = this.todos.filter(task => (task.id !== todo.id));
-  }
-  onEdit(todo) {
+  onEdit = (todo) => {
     console.log('oNeDIT cALLED IN mAIN aPP====>>>', todo);
   }
 }
