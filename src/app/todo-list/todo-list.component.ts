@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class TodoListComponent {
 
   todos = [
-    { id: 11, name: 'Task1' },
-    { id: 12, name: 'Task2' },
-    { id: 13, name: 'Task3' },
+    { id: 21, name: 'Task1' },
+    { id: 2, name: 'Task2' },
+    { id: 1, name: 'Task3' },
     { id: 14, name: 'Task4' },
-    { id: 15, name: 'Task5' },
+    { id: 55, name: 'Task5' },
     { id: 16, name: 'Task6' },
-    { id: 17, name: 'Task7' },
+    { id: 7, name: 'Task7' },
     { id: 18, name: 'Task8' },
-    { id: 19, name: 'Task9' },
+    { id: 169, name: 'Task9' },
     { id: 20, name: 'Task10' }
   ];
 

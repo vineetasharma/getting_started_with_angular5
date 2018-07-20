@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodoEditComponent } from './todo-edit/todo-edit.component';
+import { SortingPipe } from './sorting.pipe';
 
 
 const appRoutes: Routes = [
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     TodoListComponent,
     TodoComponent,
-    TodoEditComponent
+    TodoEditComponent,
+    SortingPipe
   ],
   imports: [
     RouterModule.forRoot(
