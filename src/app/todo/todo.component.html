@@ -1,6 +1,14 @@
 <div class="todo-container">
-  <div>{{todo.id}}</div>
-  <div>{{todo.name}}</div>
+    <h4>Pick the highlight or leave color </h4>
+    <div>
+      <input type="radio" name="colors" (click)="color='lightgreen'">Green
+      <input type="radio" name="colors" (click)="color='yellow'">Yellow
+      <input type="radio" name="colors" (click)="color='cyan'">Cyan
+    </div>
+  <div [appHighlight]="'green'" mouseLeaveColor="brown">{{todo.id}}</div>
+  <!-- <div appHighlight highlightColor="green">{{todo.id}}</div> -->
+  <!-- <div appHighlight [highlightColor]="color" mouseLeaveColor="color">{{todo.name}}</div> -->
+  <div [appHighlight]="color" mouseLeaveColor="brown">{{todo.id}}</div>
   <div>
       <a  routerLink="/edit-todo">Edit</a>
   </div>

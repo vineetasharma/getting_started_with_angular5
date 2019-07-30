@@ -9,6 +9,7 @@ export class TodoComponent implements OnInit {
   @Input() todo: object;
   @Input() onDelete: any;
   @Input() onEdit: any;
+  color: string;
 
   constructor() { }
 

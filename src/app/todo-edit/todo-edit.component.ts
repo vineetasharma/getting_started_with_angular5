@@ -8,7 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TodoEditComponent implements OnInit {
   @Input() todo: object;
 
-  constructor() { }
+  user={
+    name: 'nishtha',
+    email: 'asf'
+  };
+
+  constructor() { 
+  }
 
   ngOnInit() {
   }
